@@ -1,0 +1,55 @@
+command --> "docker run hello-world" 
+
+- The run command is used to mention that we want to create an instance of an image, which is then called a 'container'.
+- Finally, "hello-world" represents the image from which the container is made.
+
+command --> "sudo docker run -it centos /bin/bash"
+
+- 'centos' is the name of the image we want to download from Docker Hub and install on our Ubuntu machine.
+- 'it' is used to mention that we want to run in "interactive mode".
+- '/bin/bash' is used to run the bash shell once CentOS is up and running.
+
+command --> "docker images"
+--- This command is used to display all the images currently installed on the system.
+
+command --> "docker rmi ImageID"
+--- This command is used to remove Docker images.
+
+command --> "sudo docker images -q"
+--- (-q) − It tells the Docker command to return the Image ID’s only.
+
+command --> "sudo docker inspect jenkins"
+--- This command is used see the details of an image or container.
+
+
+
+""""Running a Container"""
+
+command --> "sudo docker run –it centos /bin/bash"
+--- To run a container in an interactive mode, first launch the Docker container.
+
+command --> "sudo docker ps"
+--- The output will show the currently running containers.
+
+command --> "docker ps -a"
+--- (─a) − It tells the docker ps command to list all of the containers on the system.
+
+
+command --> "docker history centos"
+--- The above command will show all the commands that were run against the centos image.
+
+command --> "docker top ContainerID"
+--- With this command, you can see the top processes within a container.
+
+command --> "docker rm ContainerID"
+--- This command is used to delete a container.
+
+command --> "docker attach ContainerID"
+--- This command is used to attach to a running container.
+
+command --> "docker pause ContainerID"
+--- This command is used to pause the processes in a running container.
+
+command --> "docker kill ContainerID"
+--- This command is used to kill the processes in a running container.
+
